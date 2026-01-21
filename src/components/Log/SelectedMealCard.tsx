@@ -10,12 +10,7 @@ interface Props {
     onSave: () => void;
 }
 
-export function SelectedMealCard({
-                                     food,
-                                     grams,
-                                     calories,
-                                     onSave,
-                                 }: Props) {
+export function SelectedMealCard({ food, grams, calories, onSave }: Props) {
     return (
         <Card>
             <Text style={styles.title}>{food.name}</Text>
