@@ -1,9 +1,10 @@
-import { View, Text } from 'react-native';
+import { ScreenContainer } from "@/src/components/Layout/ScreenContainer";
+import LogScreen  from "@/src/screens/log/LogActivityScreen"
 
-export default function LogScreen() {
+export default function Log() {
     return (
-        <View>
-            <Text>Log Screen</Text>
-        </View>
+        <ScreenContainer>
+            <LogScreen />
+        </ScreenContainer>
     );
 }
