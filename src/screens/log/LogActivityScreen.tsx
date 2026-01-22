@@ -2,6 +2,7 @@ import { View, Text } from "react-native";
 import { useState } from "react";
 import { LogModeSwitch } from "@/src/components/Log/LogModeSwitch";
 import { MealForm } from "@/src/components/Log/MealForm";
+import WorkoutForm  from "./workout/WorkoutForm"
 
 export default function LogScreen() {
     const [mode, setMode] = useState<"meal" | "workout">("meal");
@@ -14,7 +15,8 @@ export default function LogScreen() {
 
             <LogModeSwitch mode={mode} onChange={setMode} />
 
-            {mode === "meal" && <MealForm />}
+            { mode === "meal" && <MealForm /> }
+            { mode === "workout" && <WorkoutForm /> }
 
         </View>
     );

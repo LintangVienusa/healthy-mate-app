@@ -16,7 +16,7 @@ export function HomeHeader() {
             <View style={styles.container}>
                 <View style={styles.left}>
                     <Image
-                        source={{ uri: 'https://i.pravatar.cc/100' }}
+                        source={{ uri: 'https://robohash.org/4CU.png?set=set1'}}
                         style={styles.avatar}
                     />
 
